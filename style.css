@@ -1,0 +1,120 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #FBD000;
+}
+
+.container {
+    margin: 10% auto;
+}
+
+
+.letter {
+    font-family: 'Press Start 2P', cursive;
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    line-height: 2;
+    background-color: Transparent;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    pointer-events: none;
+}
+
+
+.heart-img {
+    width: 20px;
+    height: 20px;
+}
+
+.italian-flag {
+    width: 30px;
+    height: 20px;
+}
+
+.sound {
+    border: 5px solid #000;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    line-height: 2;
+    outline: none;
+    text-indent: -9999px;
+}
+
+
+.mario {
+    background: url("images/Mario.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.luigi {
+    background: url("images/luigi.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.toad{
+    background: url("images/Toad.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.wario {
+    background: url("images/Wario.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.peach {
+    background: url("images/Peach.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.bowser {
+    background: url("images/Bowser.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.yoshi {
+    background: url("images/Yoshi.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+
+.pressed {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/* Display letters container only on desktop */
+@media screen and (max-width: 1301px){
+    .letter-container {
+        visibility: hidden;
+    }
+}
